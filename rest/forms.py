@@ -11,5 +11,5 @@ class MenuForm(forms.ModelForm):
     def __init__ (self, *args, **kwargs):
         super(MenuForm, self).__init__(*args, **kwargs)
         self.fields["platos"].widget = forms.widgets.CheckboxSelectMultiple()
-        self.fields["platos"].help_text = "Ingrese los platos que conformen el menu"
+        self.fields["platos"].help_text = "Seleccione los Platos que integraran el menu"
         self.fields["platos"].queryset = Plato.objects.all()
