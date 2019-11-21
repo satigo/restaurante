@@ -3,7 +3,7 @@ from .models import Menu, Plato
 
 
 class MenuForm(forms.ModelForm):
-#todos los campos de Pelicula
+
     class Meta:
         model = Menu
         fields = ('nombre', 'platos')
